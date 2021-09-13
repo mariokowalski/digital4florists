@@ -5,10 +5,10 @@ admin_path: cicy-admin
 webhook_url: 
 sections:
 - type: directory
-  path: ''
-  label: d4f
+  path: content
+  label: Pages
   create: all
-  match: "**/*"
+  match: "*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
