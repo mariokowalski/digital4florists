@@ -4,9 +4,17 @@ auto_deploy: false
 admin_path: cicy-admin
 webhook_url: 
 sections:
+- type: document
+  path: content/about/**/*
+  label: About
+  match: "**/*"
+- type: document
+  path: content/post/*md
+  label: Post
+  match: "**/*"
 - type: directory
   path: content
-  label: Pages
+  label: RenderedPages
   create: all
   match: "*"
 upload_dir: static/uploads
